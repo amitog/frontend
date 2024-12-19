@@ -499,4 +499,11 @@ input[type=range]:disabled::-ms-fill-upper {
   }
 
 
-  
+  /* nav */
+  .topnav {
+    background-color: #049faa;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+  }
