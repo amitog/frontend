@@ -22,8 +22,11 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <div class="card-list">
+  <body style="flex-direction:column;">
+    <div class="topnav">
+      <h1>Sensor Readings App <i class="fas fa-clipboard-list"></i></h1>
+    </div>
+    <div class="card-list" style="margin-top: 10px;">
       <a href="#" class="card-item">
         <div id="wrapper">
           <div id="termometer">
@@ -58,12 +61,10 @@
       </a>
       
          
-      <a href="#" class="card-item" id="irrigationCard">
+      <a class="card-item" id="irrigationCard" href="https://backend-4ml0.onrender.com">
         <img src="./image-removebg-preview.png" alt="" style="height: 40vh; width: 100%;">
         <div id="playground">
           <p id="unit" style="color: black; font-size: x-large; font-weight: 900;">Upload Photo</p>
-          <!-- Hidden file input for the camera -->
-          <input type="file" id="cameraInput" accept="image/*" capture="camera" style="display:none" />
         </div>
       </a>
       
