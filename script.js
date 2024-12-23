@@ -50,7 +50,7 @@ setTemperature();
 
 async function fetchSensorData() {
     try {
-        const response = await fetch('http://localhost:5000/get_sensor_data');
+        const response = await fetch('https://backend-4ml0.onrender.com/get_sensor_data');
         if (response.ok) {
             const data = await response.json();
             updateTemperature(data.temperature);
@@ -119,7 +119,7 @@ irrigationCard.addEventListener('click', async function () {
     unitText.textContent = `Irrigation Control: ${irrigationOn ? 'ON' : 'OFF'}`;
 
     try {
-        const response = await fetch('http://localhost:5000/irrigation_control', {
+        const response = await fetch('https://backend-4ml0.onrender.com/irrigation_control', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ irrigation_on: irrigationOn })
